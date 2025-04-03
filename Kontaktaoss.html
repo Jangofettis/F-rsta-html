@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta oss</title>
+</head>
+<body>
+    <h1> Ansökan</h1>
+    <p>
+        <a href="Om_oss.html">tillbaka till Om oss</a> 
+    </p>
+
+    <h2> Process</h2>
+    <ol>
+        <li>Du skickar in din ansökan</li>
+        <li>Ansökan ligger till sig i 2 veckor</li>
+        <li>Vi behandlar din ansökan</li>
+        <li>Inom 3 dagar efter behandlad ansökan får du svar i form av röksignaler</li> 
+    </ol>
+    <form method="POST" action="https://wwwlab.webug.se/examples/webbplatsdesign/recieve/recieve_dugga.php">
+        <fieldset>
+            <legend>Person information</legend>
+        <div>
+            <label>
+                Förnamn:
+                <input type="text" name="firstname" placeholder="Ditt förnamn">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Efternamn:
+                <input type="text" name="lastname" placeholder="Ditt efternamn">
+            </label> 
+        </div>
+
+        <div>
+            <label>
+                Ålder:
+                <input type="number" name="age" placeholder="Din ålder">
+            </label>
+        </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Din roll</legend>
+        <div>
+            Är du eftertänksam?
+            <label>
+                Ja
+                <input type="radio" name="thoughtful" value="Ja">
+            </label>
+
+            <label>
+                Nej
+                <input type="radio" name="thoughtful" value="Nej">
+            </label>
+            
+        </div>
+
+        <div>
+            <label>
+                Hur duktig är du?
+                <input type="range" name="skillful" min="0" max="10">
+            </label>
+        </div>
+
+        <div>
+             <label>
+                Vilken roll vill du ha?
+                <select name="role">
+                    <option value="Front">Frontend</option>
+                    <option value="Back">Backend</option>
+                    <option value="Admin">Administrativ</option>
+                </select>
+             </label>
+        </div>
+
+        <div>
+            Om dig
+            <label>
+                 <textarea name="about" rows="10" cols="50" placeholder="Berätta om dig själv"></textarea>    
+            </label>
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Avslutandevis</legend>
+        <div>
+            <label>
+                <input type="checkbox" name="savemypersonaldata" value="Ja">
+            </label>
+            Jag godkänner att ni sparar mina uppgifter.
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="sendnewsletter" value="Ja">
+            </label>
+            Jag vill ha nyhetsbrev. 
+        </div>
+
+        <input type="submit" value="Skicka formulär">
+        </fieldset>
+    </form>
+
+
+</body>
